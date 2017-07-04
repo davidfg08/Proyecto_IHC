@@ -1,0 +1,634 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title> Monte y Culebra VS Civilización- La cumbre de tus mejores destinos </title>
+
+		<!--[DEFINICIÓN DEL CSS]-->
+			<link rel="stylesheet" href="css/bootstrap.css" />
+			<link rel="stylesheet" href="css/bootstrap.min.css" />
+	    	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    	<!--[/DEFINICIÓN DEL CSS]-->
+
+
+		<!-- Implemento el icono de Monte y Culebra para el título-->
+		<link rel="shortcut icon" type="images/png" href="favicon.ico" />
+
+	</head>
+
+		<body >
+			
+			<div class="container">
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				  	<div class="container-fluid">
+				    	<div class="navbar-header">
+				    		<img class="icono" src="images/Icono_t.png">
+				      		<a class="navbar-brand" href="perfil_prueba.html"> <p id="titulo_p"> Monte y Culebra VS Civilización </p></a>
+				    	</div>
+					    
+					    <ul class="nav navbar-nav navbar-right">
+					    	<li>
+					    		<a href="#"  class="tam-lg" id = "btn-li" title = "Aumentar tamaño de letra" accesskey="+"> <span class="glyphicon glyphicon-plus-sign"> </span></a>
+					    	</li>
+					    	<li>
+					    		<a href="#"  class="tam-sm" id = "btn-li" title = "Disminuir tamaño de letra" accesskey="-"> <span class="glyphicon glyphicon-minus-sign"> </span></a>
+					    	</li>
+      						<li><a href="perfil.html" id = "btn-li" class="button btn-sm" accesskey="i"> <span class="glyphicon glyphicon-user"> </span>&nbsp;Jaimito Pérez </a></li>
+    					</ul>
+
+
+				    </div>
+				</nav>
+				
+
+
+				<!-- Modal -->
+				<div id="myModal3" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						
+        						<h3 class="text-center" id="titulo">¡Bienvenido!</h3>
+      						</div>
+
+      						<div class="modal-body">
+      							<form id="login" class="contenedor-inputs" method="get" onsubmit="return valida()">
+      								<br>
+        							<p class="text-center form-signin-heading" id="tipotext"> <b> Por favor, complete los siguientes campos: </b></p>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  id="correo" type="email" class="campo-texto-i" placeholder="correo@example.com" title="Introduzca su correo electrónico" required>
+											</center>
+	        							</label>
+	        							<div class="error_correo">
+	        								<p class="alert alert-danger" id="text_alert" role="alert"><span class="glyphicon glyphicon-remove"><strong>&nbsp;¡Alerta!</strong> Debe ser un correo electrónico válido. </span></p>
+	        								<p class="alert alert-danger" id="text_alert" role="alert"><span class="glyphicon glyphicon-remove"><strong>&nbsp;¡Alerta!</strong> Por favor, ingresa un correo electrónico. </span></p>
+    									</div>
+	        							<br>
+	        							<center>
+	        								<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        					<center>
+			          						<input  id="contraseña" type="password" class="campo-texto-i" placeholder="Contraseña" maxlength= "8" title="Introduzca una contraseña de 8 dígitos" required>
+										</center>
+	        							</label>
+
+	        							<div class="error_contraseña">
+	        								<p class="alert alert-danger" id="text_alert" role="alert"><span class="glyphicon glyphicon-remove"><strong>&nbsp;¡Alerta!</strong> Tu contraseña debe ser de al menos 6 caracteres. </span></p>
+	        								<p class="alert alert-danger" id="text_alert" role="alert"><span class="glyphicon glyphicon-remove"><strong>&nbsp;¡Alerta!</strong> Por favor, ingresa una contraseña. </span></p>
+    									</div>
+
+	        							<br>
+	        							<center>
+	        								<div class="checkbox">
+	        									<label id="forgot-p">
+            										<input type="checkbox" value="remember-me">Recordar contraseña
+          										</label>
+          									</div>
+          								</center>
+          								<br>
+	        							<p class="text-center"><a href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Iniciar Sesión</b></a></p>
+	        							<br>
+	        							<p class="text-center" id="tipotext"><b><a href="#" id="forgot-p" data-toggle="modal" data-target="#myModal5">¿Has olvidado tu contraseña?</a></b></p> 
+	        							<p class="text-center" id="tipotext"><b>¿No posees cuenta? <a href="#" class="button btn-sm" id="forgot-p"data-toggle="modal" data-target="#myModal4" role="button"> Regístrese gratis.</a></b></p> 
+	    						</form>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				<div class="container-fluid">
+
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+								
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+						    <li data-target="#myCarousel" data-slide-to="4"></li>
+						    <li data-target="#myCarousel" data-slide-to="5"></li>
+						    <li data-target="#myCarousel" data-slide-to="6"></li>
+						</ol>
+
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">						    
+								<img class="img-responsive" src="images/fondo.jpg" alt="Chania" id="fondo">
+								    
+								      	
+							</div>
+
+							<div class="item">						   
+								<img class="img-responsive" src="images/fondo2.jpg" id="fondo" alt="Chania2">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/fondo3.jpg" id="fondo" alt="Flower3">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/playa-chichi.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/avila.png" id="fondo" alt="Flower4">
+							</div>
+
+						</div>
+
+							  
+					</div>
+				</div>
+				
+				
+
+				<div class="row">
+					<nav id="barra" class="navbar navbar-default nav-pills" role="navigation">
+					  <div class="container-fluid">
+					    <ul id="desplegable" class="nav navbar-nav">
+					      	<li class="active"> <a title="Inicio" href="perfil_prueba.html" id = "btn-s" class="button btn-sm"> <span class="glyphicon glyphicon-home"> </span></a></li>
+							<li> <a href="perfil_quienes_somos.html" id = "btn-s" class="button btn-sm"> ¿Quiénes somos? </a></li>
+							<li> <a href="galeria.html" id = "btn-s" class="button btn-sm"> Galería </a></li>
+							<li> <a href="#" id = "btn-s" class="button btn-sm" data-toggle="modal" data-target="#myModal2"> Contacto </a></li>
+							<li>
+								<div class="dropdown">
+									<button class="button btn-sm dropdown-toggle" id = "btn-s" type="button" data-toggle="dropdown">Registro
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+									    <li> <a href="#"  id = "btn-s" class="button btn-sm" data-toggle="modal" data-target="#myModal"> Suscribirse </a></li>
+										<li> <a href="#" id = "btn-s" class="button btn-sm" data-toggle="modal" data-target="#myModal4"> Registrarse </a></li>
+									</ul>
+								</div>
+							</li>
+							
+							<li> <a href="perfil_ayuda.html" id = "btn-s" class="button"> Accesibilidad </a></li>
+					    </ul>
+
+					    
+					    <form class="navbar-form navbar-right" role="navigation">
+		    				<div class="form-group">
+		        				<input type="text" class="campo-texto-i" placeholder="Escribe tu consulta...">
+		    				</div>
+		    				<button type="submit" class="buttom btn-sm" id="btn-li2" title="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+						</form>
+						
+
+					  </div>
+					</nav>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<!--<button type="button" class="btn btn-default btncerrar" data-dismiss="modal" title="Cerrar">&times;</button>-->
+        						<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Suscripción!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Suscríbete y recibirás de manera gratuita correos electrónicos referentes a nuestros próximos eventos o actividades, además de boletines especiales y promociones. </b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Por favor, ingrese su email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="email" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a class="button btn-sm" href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Suscribirse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cerrar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal5" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<!--<button type="button" class="btn btn-default btncerrar" data-dismiss="modal" title="Cerrar">&times;</button>-->
+        						<h4 class="text-center" id="titulo">¡Bienvenido!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Si desea recuperar su contraseña, por favor ingrese su email:</b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="email" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a class="button btn-sm" href="#" type="submit" id = "btn-li"><b>Enviar</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+
+
+				<!-- Modal -->
+				<div id="myModal4" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<!--<button type="button" class="btn btn-default btncerrar" data-dismiss="modal" title="Cerrar">&times;</button>-->
+        						<h4 class="text-center" id="titulo">¡Bienvenido!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Regístrate de manera gratuita y obtendrás una cuenta, mediante la cual tendrás accesos a muchas funciones de la página web.</b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Nombre:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="text" class="campo-texto-i" placeholder="Nombre Apellido">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="email" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Confirme su contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a class="button btn-sm" href="#" type="submit" id = "btn-li" ><b>Registrarse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				<div class="row">
+					<div id="izquierdo">
+			        <div class="col-md-9">
+
+			        	<div id="articulos">
+			        		<h4 class="text-justify" id="titulo_p">¡LO MÁS VISTO!</h4>
+			        		<div class="col-md-6">
+			        			<div class="articulosi">
+									<h4 id="titulo_p" "text-justify"> Parque Nacional Waraira Repano </h4> 
+									<div align="center"> <img src="images/waraira_repano.png" alt="avila" id="imagen"> </div>
+			          				<p id="tipotext" class="text-justify">Conocido oficialmente como Parque Nacional El Ávila está localizado en la Cadena del Litoral dentro de la cordillera de la Costa, en el centro-norte de Venezuela. Se extiende desde Caracas, y todo el norte del estado Miranda y sur del estado Vargas. Esta formación montañosa (patrimonio nacional) es considerada emblema y pulmón vegetal...</p>
+			          				<br>
+			          				<li><a href="perfil_waraira.html" id = "btn-s" class="button btn-sm"> Leer más  </a></li>
+								</div>
+								<br>
+								<div class="articulosi">
+									<h4 id="titulo_p" class="text-justify"> Mausoleo del Dr. Knoche</h4>
+									<div align="center"> <img src="images/knoche.png" alt="knoche" id="imagen"> </div>
+			          				<p id="tipotext" class="text-justify">   Dentro del Parque Nacional El Ávila (Waraira Repano), se encuentran las ruinas de lo que fue la casa y laboratorio del Dr. Gottfried Knoche (1.813-1.901), un médico cirujano de origen alemán quien fue famoso por inventar un misterioso líquido embalsamador con el que momificó a familiares, conocidos e inclusive a sí mismo...</p>
+			          				<br>
+			          				<li> <a href="#" id = "btn-s" class="button btn-sm"> Leer más </a></li>
+								</div>
+			        		</div>
+
+			        		<div class="col-md-6">
+			        			<div class="articulosi">
+									<h4 id="titulo_p" class="text-justify"> El Jarillo  </h4>
+									<div align="center"><img src="images/jarillo.png" alt="jarillo" id="imagen"> </div>
+			          				<p id="tipotext" class="text-justify">El Jarillo se ubica en los altos mirandinos aproximadamente a 30 km. de la ciudad de Los Teques y a unos pocos kilómetros de la Colonia Tovar estado Aragua. Este pueblo, así como la Colonia Tovar, fue fundado por las mismas personas, de origen alemán. Es por esto que pasarás a impresionarte con la arquitectura típica alemana...
+									</p>
+			          				<br>
+			          				<li><a href="#" id = "btn-s" class="button btn-sm"> Leer más  </a></li>
+								</div>
+								<br>
+								<div class="articulosi">          
+									<h4 id="titulo_p" class="text-justify"> Picacho de Galipán </h4>
+									<div align="center"><img src="images/picacho.png" alt="picacho" id="imagen"> </div>
+			          				<p id="tipotext" class="text-justify">El Picacho es una monumental montaña rocosa situada al lado oeste de Galipán. Posee una vegetación poco frondosa; pero con abundancia de helechos. Esta alucinante formación puede ser vista desde distintos ángulos del Parque Nacional Waraira Repano, obteniendo una vista espectacular del pueblo de Galipán, inclusive hacia las costas de La Guaira...</p>
+			          				<br>
+			          				<li><a href="#" id = "btn-s" class="button btn-sm"> Leer más  </a></li>
+								</div>
+			        		</div>
+
+			        		 <ul class="pager">
+  								<li><a href="#" type="button" id = "btn-s" class="btn btn-primary disabled">Anterior</a></li>
+  								<li><a href="prueba2.html" type="button" id = "btn-s" class="btn btn-primary">Siguiente</a></li>
+							</ul>
+
+
+			        	</div>
+
+			        </div>
+			    	</div>
+
+			        <div id="derecho">
+	        		<div class="col-md-3">
+	        			<div id="noticias">
+	        				<h4 id="titulo_p" class="text-center"> NOTICIAS  </h4>
+		        			<div id="contactar3">
+		        				
+								<h4 id="titulo_p" class="text-center"> Síguenos en:  </h4>
+								
+								<center>
+									<a class="button btn-sm" href="https://www.facebook.com/Monte-y-Culebra-VS-Civilizaci%C3%B3n-1746191228943967/" target="_blank"> <img  alt="Facebook" src="images/facebook_3.png" title="Facebook" img border="0" /></a>
+
+									<a class="button btn-sm" href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Twitter" src="images/twitter_3.png" title="Twitter" img border="0" /></a>
+
+									<a class="button btn-sm" href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Instagram" src="images/instagram_5.png" title="Instagram" img border="0" /></a>
+								</center>
+							</div>
+
+							<div id="contactar">
+								<h4 id="titulo_p" class="text-center"> ¡Contáctanos!  </h4>
+		          				<p id="tipotext" class="text-justify">Si deseas obtener información acerca de nuestras actividades, lo que hacemos, o posees alguna duda referente a nuestros posts, te invito a llenar el formulario de contacto.</p>
+		          				<center> <li> <a href="#" id = "btn-li" class="button btn-sm" data-toggle="modal" data-target="#myModal2"> Contactar </a></li> </center>
+							</div>
+
+							<!-- Modal -->
+							<div id="myModal2" class="modal fade" role="dialog">
+	  							<div class="modal-dialog">
+
+	    							<!-- Modal content-->
+	    							<div class="modal-content">
+	      								<div class="modal-header">
+	        								
+	        								<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Contacto!</h4>
+	      								</div>
+
+	      								<div class="modal-body">
+	      									<br><br>
+	        								<p class="text-justify" id="tipotext"> <b> Por favor introduzca su email, seguido de la consulta que desea realizar: </b></p>
+	        								<br>
+	        								<div class="contenedor-inputs">
+	        									<div>
+		        									<label class="text-justify" id="tipotext"> <b> Email:</b> </label>
+		        									<br>
+		        									<input  type="text" class="campo-texto-i" placeholder="correo@example.com">
+												</div>
+												<br>
+												<div>
+		        									<label  class="text-justify" id="tipotext"> <b> Consulta: </b> </label>
+		        									<br>
+		        									<textarea  type="text"  rows="5" placeholder="Mensaje..." > </textarea>
+		      									</div>
+		      									<br>
+		        								<p class="text-justify"><a href="#" type="submit" id = "btn-s" class="button btn-sm"><b>Enviar</b></a></p>
+		        								<br>
+		        								<p class="text-justify" id="tipotext"><a target="_blank" href="https://accounts.google.com/SignUp?service=mail&hl=es&continue=http%3A%2F%2Fmail.google.com%2Fmail%2F%3Fpc%3Des-ha-latam-ve-bk-xplatform1&utm_campaign=es&utm_source=es-ha-latam-ve-bk-xplatform1&utm_medium=ha" id="forgot-p">¿No posees correo electrónico?</a></p>  
+		        
+		    								</div>
+	      								</div>
+
+			      						<div class="modal-footer">
+			        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cerrar</button>
+			      						</div>
+	    							</div>
+
+	  							</div>
+							</div>
+
+							<div id="contactar2">
+								<h4 id="titulo_p" class="text-center"> ¡Suscríbete gratis!  </h4> 
+		          				<p id="tipotext" class="text-justify">Si deseas obtener información referente a nuestras últimas noticias, próximas actividades, boletines especiales y más, puedes suscribirte de manera gratuita:</p>
+		          				<center> <li> <a href="#" id = "btn-li" class="button btn-sm" data-toggle="modal" data-target="#myModal"> Suscribirse </a></li> </center>
+							</div>
+
+							<div id="contactar4">
+								<h4 id="titulo_p" class="text-center"> ¡Regístrate gratis!  </h4> 
+		          				<p id="tipotext" class="text-justify">Si deseas realizar acciones adicionales, como realizar comentarios, publicar una foto en la galería de tu preferencia, puedes registrarte de manera gratuita:</p>
+		          				<center> <li> <a href="#" id = "btn-li" class="button btn-sm" data-toggle="modal" data-target="#myModal4"> Registrarse </a></li> </center>
+							</div>
+
+							<div id="actividad">
+								<h4 id="titulo_p" class="text-center"> ¡Próximas actividades!  </h4> 
+		          				<p id="tipotext" class="text-justify">Despliegue la barra y obtenga información de todas nuestras actividades y los artículos publicados de acuerdo al mes de su preferencia.</p>
+		          				<br>
+		          				<label id="tipotext"> <b> Escoja el mes:  </b></label>
+		          				<select id="region">
+		          					<!--<option value=" "> Mes </option>-->
+					                <option value="a_enero.html">Enero</option>
+					                <option value="a_febrero.html">Febrero</option>
+					                <option value="a_marzo.html">Marzo</option>
+					                <option value="a_abril.html">Abril</option>
+					                <option value="a_mayo.html">Mayo</option>
+					                <option value="a_junio.html">Junio</option>
+					                <option value="a_julio.html">Julio</option>
+					                <option value="a_agosto.html">Agosto</option>
+					                <option value="a_septiembre.html">Septiembre</option>
+					                <option value="a_octubre.html">Octubre</option>
+					                <option value="a_noviembre.html">Noviembre</option>
+					                <option value="a_diciembre.html">Diciembre</option>
+					            </select>
+
+					            <script type="text/javascript">
+	    							document.getElementById("region").onchange = function() {
+								        if (this.selectedIndex>=0) {
+								            window.location.href = this.value;
+								        }        
+							    	};
+								</script>
+
+							</div>
+						</div>
+
+	        		</div>
+	        		</div>
+
+	      		</div>
+
+
+			</div>
+
+		<!-- Implementacion de los .js-->
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<script src="js/bootstrap.js"></script>
+
+		<script src="js/functions.js"></script>
+    	<script type="text/javascript">
+
+		function valida() {
+  		var ok = true;
+  		var msg = "Debes escribir algo en los campos:\n";
+
+  		if(document.form.getElementById("correo").value == "")
+  		{
+    		msg += " Email\n";
+    		ok = false;
+  		}
+
+		if(document.form.getElementById('contraseña').value == "")
+		{
+		    msg += "Contraseña\n";
+		    ok = false;
+		}
+
+		if(ok == false)
+			alert(msg);
+		return ok;
+
+		}
+
+
+		</script>
+
+		<script>
+     		$(document).ready(function(){
+        		$('.dropdown-toggle').dropdown()
+    		});
+		</script>
+
+		<!--<script>
+			$("#desplegable li a").click(function(e) {
+	  				var $this = $(this);
+	  				if (!$this.hasClass('active')) {
+	    				$this.addClass('active');
+	  				}
+	  		};
+	  	</script>-->
+	  	
+     		/*$(document).ready(function(){
+        		$('a').click(function(event){
+        			$('a').animate({'background-color': "#FFFFFF"});
+        		});
+    		});*/
+		
+
+	  	<script>
+	  		$(document).ready(function(){
+	      		$('.tam-sm').click(function(event){
+		            $('p').animate({fontSize: "-=2px"});
+		            $('h1').animate({fontSize: "-=2px"});
+		            $('h2').animate({fontSize: "-=2px"});
+		            $('h3').animate({fontSize: "-=2px"});
+		            $('h4').animate({fontSize: "-=2px"});
+		            $('h5').animate({fontSize: "-=2px"});
+		            $('#tipotext').animate({fontSize: "-=2px"});
+		            $('#titulo').animate({fontSize: "-=2px"});
+		            $('#titulo_p').animate({fontSize: "-=2px"});
+		            $('#contactar').animate({'height': "-=15%"});
+		            $('#contactar2').animate({'height': "-=15%"});
+		            $('#contactar3').animate({'height': "-=15%"});
+		            $('#contactar4').animate({'height': "-=15%"});
+		            $('#actividad').animate({'height': "-=15%"});
+		            $('#noticias').animate({'height': "-=15%"});
+		            $('.button').animate({fontSize: "-=15%"});
+		            $('.dropdown-toggle').animate({fontSize: "-=15%"});
+		            $('.btn').animate({fontSize: "-=15%"});
+		            $('#articulos').animate({'height': "-=30%"});
+		            $('.articulosi').animate({'height': "-=30%"});
+		            event.preventDefault(); 
+	        	});
+	        });
+      	</script>
+
+      <script>
+	  		$(document).ready(function(){
+	      		$('.tam-lg').click(function(event){
+		            $('p').animate({fontSize: "+=2px"});
+		            $('h1').animate({fontSize: "+=2px"});
+		            $('h2').animate({fontSize: "+=2px"});
+		            $('h3').animate({fontSize: "+=2px"});
+		            $('h4').animate({fontSize: "+=2px"});
+		            $('h5').animate({fontSize: "+=2px"});
+		            $('#tipotext').animate({fontSize: "+=2px"});
+		            $('#titulo').animate({fontSize: "+=2px"});
+		            $('#titulo_p').animate({fontSize: "+=2px"});
+		            $('#contactar').animate({'height': "+=15%"});
+		            $('#contactar2').animate({'height': "+=15%"});
+		            $('#contactar3').animate({'height': "+=15%"});
+		            $('#contactar4').animate({'height': "+=15%"});
+		            $('#actividad').animate({'height': "+=15%"});
+		            $('#noticias').animate({'height': "+=15%"});
+		            $('.button.btn-sm').animate({fontSize: "+=15%"});
+		            $('.dropdown-toggle').animate({fontSize: "+=15%"});
+		            $('#articulos').animate({'height': "+=30%"});
+		            $('.articulosi').animate({'height': "+=30%"});
+		            event.preventDefault(); 
+	        	});
+	        });
+      	</script>
+
+      
+
+		</body>
+</html>

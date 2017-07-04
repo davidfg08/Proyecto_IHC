@@ -1,0 +1,744 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+			<html lang="en">
+
+
+				<head>
+					<meta charset="UTF-8">
+					<meta http-equiv="x-ua-compatible" content="ie=edge">
+					<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+			<title> Monte y Culebra VS Civilización- Galería de Imágenes </title>
+
+	
+			<!--[DEFINICIÓN DEL CSS]-->
+			<link rel="stylesheet" href="css/bootstrap.css" />
+			<link rel="stylesheet" href="css/bootstrap.min.css" />
+	    	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    	<!--[/DEFINICIÓN DEL CSS]-->
+			
+
+<!-- ............................... Fancybox  .............-->
+
+		<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	
+
+<!--  ........................... Fancybox.................-->
+
+		<!-- Implemento el icono de Monte y Culebra para el título-->
+		<link rel="shortcut icon" type="images/png" href="favicon.ico" />
+
+	</head>
+
+		<body >
+			
+			<div class="container">
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				  	<div class="container-fluid">
+				    	<div class="navbar-header">
+				    		<img class="icono" src="images/Icono_t.png">
+				      		<a class="navbar-brand" href="prueba.html"> <p id="titulo_p"> Monte y Culebra VS Civilización </p></a>
+				    	</div>
+					    
+					    <ul class="nav navbar-nav navbar-right">
+      						<li><a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#myModal3"> <span class="glyphicon glyphicon-user"> </span>&nbsp;Iniciar Sesión </a></li>
+    					</ul>
+
+
+				    </div>
+				</nav>
+				
+
+
+				<!-- Modal -->
+				<div id="myModal3" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h3 class="text-center" id="titulo">¡Bienvenido!</h3>
+      						</div>
+
+      						<div class="modal-body">
+      							<form class="contenedor-inputs" method="get" onsubmit="return valida()">
+      								<br>
+        							<p class="text-center form-signin-heading" id="tipotext"> <b> Por favor, complete los siguientes campos: </b></p>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  id="correo" type="email" class="campo-texto-i" placeholder="correo@example.com" title="Introduzca su correo electrónico" required>
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        								<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        					<center>
+			          						<input  id="contraseña" type="password" class="campo-texto-i" placeholder="Contraseña" maxlength= "8" title="Introduzca una contraseña de 8 dígitos" required>
+										</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        								<div class="checkbox">
+	        									<label id="forgot-p">
+            										<input type="checkbox" value="remember-me">Recordar contraseña
+          										</label>
+          									</div>
+          								</center>
+          								<br>
+	        							<p class="text-center"><a href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Iniciar Sesión</b></a></p>
+	        							<br>
+	        							<p class="text-center" id="tipotext"><b><a href="#" id="forgot-p">¿Has olvidado tu contraseña?</a></b></p> 
+	        							<p class="text-center" id="tipotext"><b>¿No posees cuenta? <a href="#" id="forgot-p"data-toggle="modal" data-target="#myModal4" role="button"> Regístrese gratis.</a></b></p> 
+	    						</form>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				
+				<div class="container">
+
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+								
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+						    <li data-target="#myCarousel" data-slide-to="4"></li>
+						    <li data-target="#myCarousel" data-slide-to="5"></li>
+						    <li data-target="#myCarousel" data-slide-to="6"></li>
+						</ol>
+
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">						    
+								<img src="images/fondo.jpg" alt="Chania" id="fondo">
+								    
+								      	
+							</div>
+
+							<div class="item">						   
+								<img src="images/fondo2.jpg" id="fondo" alt="Chania2">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo3.jpg" id="fondo" alt="Flower3">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+							</div>
+
+						</div>
+
+							  
+					</div>
+				</div>
+				
+				
+
+				<div class="row">
+					<nav id="barra" class="navbar navbar-default nav-pills" role="navigation">
+					  <div class="container-fluid">
+					  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>                        
+				       </button>
+				       <div class="collapse navbar-collapse text-center" id="myNavbar" >
+					    <ul id="desplegable" class="nav navbar-nav">
+					      	<li> <a title="Inicio" href="prueba.html" id = "btn-s" class="button"> <span class="glyphicon glyphicon-home"> </span></a></li>
+							<li> <a href="quienes_somos.html" id = "btn-s" class="button"> ¿Quiénes somos? </a></li>
+							<li class="active"> <a href="galeria.html" id = "btn-s" class="button"> Galería </a></li>
+							<li> <a href="#" id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal2"> Contacto </a></li>
+							<li>
+								<div class="dropdown">
+									<button class="btn btn-sm dropdown-toggle" id = "btn-s" type="button" data-toggle="dropdown">Registro
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+									    <li> <a href="#"  id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal"> Suscribirse </a></li>
+										<li> <a href="#" id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal4"> Registrarse </a></li>
+									</ul>
+								</div>
+							</li>
+							
+							<li> <a href="ayuda.html" id = "btn-s" class="button"> Accesibilidad </a></li>
+					    </ul>
+
+					    
+					    <form class="navbar-form navbar-right" role="search">
+		    				<div class="input-group">
+		        				<input type="text" class="campo-texto-i" placeholder="Escribe tu consulta...">
+		    				
+		    				 <div class="input-group-btn">
+		    				<button type="submit" class="btn btn-default btn-sm" id="btn-li2" title="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+		    				</div>
+		    				</div>
+						</form>
+						
+						</div>
+					  </div>
+					</nav>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Suscripción!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Suscríbete y recibirás de manera gratuita correos electrónicos referentes a nuestros próximos eventos o actividades, además de boletines especiales y promociones. </b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Por favor, ingrese su email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="text" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Suscribirse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+
+
+				<!-- Modal -->
+				<div id="myModal4" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h4 class="text-center" id="titulo">¡Bienvenido!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Regístrate de manera gratuita y obtendrás una cuenta, mediante la cual tendrás accesos a muchas funciones de la página web. </b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Nombre:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="text" class="campo-texto-i" placeholder="Nombre Apellido">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="text" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Confirme su contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Registrarse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+
+						<!-- Modal -->
+						<div id="myModal2" class="modal fade" role="dialog">
+  							<div class="modal-dialog">
+
+    							<!-- Modal content-->
+    							<div class="modal-content">
+      								<div class="modal-header">
+        								<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Contacto!</h4>
+      								</div>
+
+      								<div class="modal-body">
+      									<br><br>
+        								<p class="text-justify" id="tipotext"> <b> Por favor introduzca su email, seguido de la consulta que desea realizar: </b></p>
+        								<br>
+        								<div class="contenedor-inputs">
+        									<div>
+	        									<label class="text-justify" id="tipotext"> <b> Email:</b> </label>
+	        									<br>
+	        									<input  type="text" class="campo-texto-i" placeholder="correo@example.com">
+											</div>
+											<br>
+											<div>
+	        									<label  class="text-justify" id="tipotext"> <b> Consulta: </b> </label>
+	        									<br>
+	        									<textarea  type="text"  rows="5" placeholder="Mensaje..." > </textarea>
+	      									</div>
+	      									<br>
+	        								<p class="text-justify"><a href="#" type="submit" id = "btn-s" class="btn btn-default btn-md"><b>Enviar</b></a></p>
+	        								<br>
+	        								<p class="text-justify" id="tipotext"><a href="#" id="forgot-p">¿No posees correo electr&oacutenico?</a></p>  
+	        
+	    								</div>
+      								</div>
+
+		      						<div class="modal-footer">
+		        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		      						</div>
+    							</div>
+
+  							</div>
+						</div>
+						<!--endModal2-->
+
+
+			<!--............................................Galeria...........................................................-->
+
+			<ul id="barrag" class="nav nav-pills">
+				    <li class="active"><a id = "btn-s" data-toggle="pill" href="#playa">Playas</a></li>
+				    <li><a id = "btn-s" data-toggle="pill" href="#mountain">Montañas</a></li> 
+  			</ul>
+
+
+
+		<div class="tab-content">
+
+			<div id="playa" class="tab-pane fade in active">
+
+			<div id="fila1" class="row">
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Playa Medina</strong> Edo. Sucre</div>
+						<a href="images/playa1.jpg" title="Playa Medina - Edo. Sucre" class="fancybox-effects-b image1">
+							<img src="images/playa1.jpg">
+						</a>
+				</div>
+
+
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Cayo Sombrero</strong> Parque Nacional Morrocoy</div>
+						<a href="images/playa2.jpg"  title="Cayo Sombrero - Parque Nacional Morrocoy" class="fancybox-effects-b image1">
+							<img src="images/playa2.jpg">
+						</a>
+				</div>
+
+				
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Playa El Yaque</strong> Margarita</div>
+						<a href="images/playa3.jpg" title="Playa El Yaque - Margarita" class="fancybox-effects-b image1">
+							<img src="images/playa3.jpg">
+						</a>
+				</div>
+				
+
+				
+			</div>
+
+			<div id="fila2" class="row">
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Playa El Yaque</strong> Margarita</div>
+						<a href="images/playa-yaque.jpg" title="Playa El Yaque - Margarita" class="fancybox-effects-b image1">
+							<img src="images/playa-yaque.jpg">
+						</a>
+				</div>
+
+
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Playa Saco</strong> Parque Nacional Mochima</div>
+						<a href="images/playa-saco-mochima.jpg" title="Playa Saco - Parque Nacional Mochima" class="fancybox-effects-b image1">
+							<img src="images/playa-saco-mochima.jpg">
+						</a>
+				</div>
+
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Puerto de Cumarebo</strong> Parque Nacional Morrocoy</div>
+						<a href="images/playa-chichi.jpg" title="Puerto de Cumarebo - Parque Nacional Morrocoy" class="fancybox-effects-b image1">
+							<img src="images/playa-chichi.jpg">
+						</a>
+				</div>
+
+				
+			</div>
+
+
+				 <ul id="pmount" class="pager">
+				    <li><a id = "btn-s" href="#">Anterior</a></li>
+				    <li><a id = "btn-s" href="#">Siguiente</a></li>
+  				</ul>
+
+
+
+		</div>
+			<!--Fin playas-->
+
+			<div id="mountain" class="tab-pane fade">
+
+				<div id="fila1" class="row">
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Salto  Ángel</strong> Parque Nacional Canaima</div>
+						<a href="images/paisaje1.jpg" title="Salto  Ángel - Parque Nacional Canaima" class="fancybox-effects-b image1">
+							<img src="images/paisaje1.jpg">
+						</a>
+				</div>
+
+
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Pico Humboldt</strong> Parque Nacional Sierra Nevada</div>
+						<a href="images/pico-h.jpg" title="Pico Humboldt - Parque Nacional Sierra Nevada" class="fancybox-effects-b image1">
+							<img src="images/pico-h.jpg">
+						</a>
+				</div>
+
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Laguna Negra</strong> Parque Nacional Sierra Nevada</div>
+						<a href="images/laguna3.jpg" title="Laguna Negra - Parque Nacional Sierra Nevada" class="fancybox-effects-b image1">
+							<img src="images/laguna3.jpg">
+						</a>
+				</div>
+
+				
+			</div>
+
+			<div id="fila2" class="row">
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Monte Roraima</strong> Gran Sabana</div>
+						<a href="images/tepuy.jpg" title="Monte Roraima - Gran Sabana" class="fancybox-effects-b image1">
+							<img src="images/tepuy.jpg">
+						</a>
+				</div>
+
+
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Monte Roraima</strong> Gran Sabana</div>
+						<a href="images/tepuy2.jpg" title="Monte Roraima - Gran Sabana" class="fancybox-effects-b image1">
+							<img src="images/tepuy2.jpg">
+						</a>
+				</div>
+
+				<div class="c col-md-4">
+					<div class="beschreibung"><strong>Paisaje Merideño</strong> Edo. Mérida</div>
+						<a href="images/paisaje4.jpg" title="Paisaje Merideño - Edo. Mérida" class="fancybox-effects-b image1">
+							<img src="images/paisaje4.jpg">
+						</a>
+				</div>
+
+				
+			</div>
+
+
+
+			    <ul id="pmount" class="pager">
+				    <li><a id = "btn-s" href="#">Anterior</a></li>
+				    <li><a id = "btn-s" href="#">Siguiente</a></li>
+  				</ul>
+
+
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+		</div>
+		
+
+	      		
+
+
+			</div>
+
+
+	    <!-- Implementacion de los .js-->
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<script src="js/bootstrap.js"></script>
+		 
+    	<script type="text/javascript">
+
+    		$(document).ready(function(){
+
+         	$('#myCarousel').carousel({
+
+             interval : 5000,
+
+             pause: false
+
+         	});
+
+    		});
+
+    	</script>
+
+    	<script>
+     		$(document).ready(function(){
+        		$('.dropdown-toggle').dropdown()
+    		});
+		</script>
+
+
+
+    </body>
+
+</html>

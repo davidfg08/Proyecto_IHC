@@ -1,0 +1,643 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title> Monte y Culebra VS Civilización- La cumbre de tus mejores destinos </title>
+
+		<!--[DEFINICIÓN DEL CSS]-->
+			<link rel="stylesheet" href="css/bootstrap.css" />
+			<link rel="stylesheet" href="css/bootstrap.min.css" />
+	    	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    	<!--[/DEFINICIÓN DEL CSS]-->
+
+
+		<!-- Implemento el icono de Monte y Culebra para el título-->
+		<link rel="shortcut icon" type="images/png" href="favicon.ico" />
+
+	</head>
+
+		<body >
+			
+			<div class="container">
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				  	<div class="container-fluid">
+				    	<div class="navbar-header">
+				    		<img class="icono" src="images/Icono_t.png">
+				      		<a class="navbar-brand" href="prueba.html"> <p id="titulo_p"> Monte y Culebra VS Civilización </p></a>
+				    	</div>
+					    
+					    <ul class="nav navbar-nav navbar-right">
+					    	<li>
+					    		<a href="#"  class="tam-lg" id = "btn-li" title = "Aumentar tamaño de letra" accesskey="+"> <span class="glyphicon glyphicon-plus-sign"> </span></a>
+					    	</li>
+					    	<li>
+					    		<a href="#"  class="tam-sm" id = "btn-li" title = "Disminuir tamaño de letra" accesskey="-"> <span class="glyphicon glyphicon-minus-sign"> </span></a>
+					    	</li>
+      						<li><a href="#" id = "btn-li" class="button btn-sm" data-toggle="modal" data-target="#myModal3" accesskey="i"> <span class="glyphicon glyphicon-user"> </span>&nbsp;Iniciar Sesión </a></li>
+    					</ul>
+
+
+				    </div>
+				</nav>
+				
+
+
+				<!-- Modal -->
+				<div id="myModal3" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h3 class="text-center" id="titulo">¡Bienvenido!</h3>
+      						</div>
+
+      						<div class="modal-body">
+      							<form class="contenedor-inputs" method="get" onsubmit="return valida()">
+      								<br>
+        							<p class="text-center form-signin-heading" id="tipotext"> <b> Por favor, complete los siguientes campos: </b></p>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  id="correo" type="email" class="campo-texto-i" placeholder="correo@example.com" title="Introduzca su correo electrónico" required>
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        								<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        					<center>
+			          						<input  id="contraseña" type="password" class="campo-texto-i" placeholder="Contraseña" maxlength= "8" title="Introduzca una contraseña de 8 dígitos" required>
+										</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        								<div class="checkbox">
+	        									<label id="forgot-p">
+            										<input type="checkbox" value="remember-me">Recordar contraseña
+          										</label>
+          									</div>
+          								</center>
+          								<br>
+	        							<p class="text-center"><a href="#" type="submit" id = "btn-li" class="button btn-sm"><b>Iniciar Sesión</b></a></p>
+	        							<br>
+	        							<p class="text-center" id="tipotext"><b><a href="#" id="forgot-p">¿Has olvidado tu contraseña?</a></b></p> 
+	        							<p class="text-center" id="tipotext"><b>¿No posees cuenta? <a class="button btn-sm" href="#" id="forgot-p"data-toggle="modal" data-target="#myModal4" role="button"> Regístrese gratis.</a></b></p> 
+	    						</form>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				
+				<div class="container-fluid">
+
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+								
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+						    <li data-target="#myCarousel" data-slide-to="4"></li>
+						    <li data-target="#myCarousel" data-slide-to="5"></li>
+						    <li data-target="#myCarousel" data-slide-to="6"></li>
+						</ol>
+
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">						    
+								<img class="img-responsive" src="images/fondo.jpg" alt="Chania" id="fondo">
+								    
+								      	
+							</div>
+
+							<div class="item">						   
+								<img class="img-responsive" src="images/fondo2.jpg" id="fondo" alt="Chania2">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/fondo3.jpg" id="fondo" alt="Flower3">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img class="img-responsive" src="images/avila.png" id="fondo" alt="Flower4">
+							</div>
+
+						</div>
+
+							  
+					</div>
+				</div>
+				
+				
+
+				<div class="row">
+					<nav id="barra" class="navbar navbar-default nav-pills" role="navigation">
+					  <div class="container-fluid">
+					  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>                        
+				       </button>
+				       <div class="collapse navbar-collapse text-center" id="myNavbar" >
+					    <ul id="desplegable" class="nav navbar-nav">
+					      	<li> <a title="Inicio" href="prueba.html" id = "btn-s" class="button"> <span class="glyphicon glyphicon-home"> </span></a></li>
+							<li> <a href="quienes_somos.html" id = "btn-s" class="button"> ¿Quiénes somos? </a></li>
+							<li class="active"> <a href="galeria.html" id = "btn-s" class="button"> Galería </a></li>
+							<li> <a href="#" id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal2"> Contacto </a></li>
+							<li>
+								<div class="dropdown">
+									<button class="btn btn-sm dropdown-toggle" id = "btn-s" type="button" data-toggle="dropdown">Registro
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+									    <li> <a href="#"  id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal"> Suscribirse </a></li>
+										<li> <a href="#" id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal4"> Registrarse </a></li>
+									</ul>
+								</div>
+							</li>
+							
+							<li> <a href="ayuda.html" id = "btn-s" class="button"> Accesibilidad </a></li>
+					    </ul>
+
+					    
+					    <form class="navbar-form navbar-right" role="search">
+		    				<div class="input-group">
+		        				<input type="text" class="campo-texto-i" placeholder="Escribe tu consulta...">
+		    				
+		    				 <div class="input-group-btn">
+		    				<button type="submit" class="btn btn-default btn-sm" id="btn-li2" title="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+		    				</div>
+		    				</div>
+						</form>
+						
+						</div>
+					  </div>
+					</nav>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Suscripción!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Suscríbete y recibirás de manera gratuita correos electrónicos referentes a nuestros próximos eventos o actividades, además de boletines especiales y promociones. </b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Por favor, ingrese su email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="email" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a href="#" type="submit" id = "btn-li" class="button btn-sm"><b>Suscribirse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cerrar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal4" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h4 class="text-center" id="titulo">¡Bienvenido!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Regístrate de manera gratuita y obtendrás una cuenta, mediante la cual tendrás accesos a muchas funciones de la página web. </b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Nombre:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="text" class="campo-texto-i" placeholder="Nombre Apellido">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="email" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Confirme su contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a href="#" type="submit" id = "btn-li" class="button btn-sm"><b>Registrarse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				<div class="row">
+					<div id="izquierdo">
+			        <div class="col-md-9">
+			        	<div id="articulosp">   
+			        		<h4 class="text-justify" id="titulo_p">ARTÍCULOS</h4>
+			        		<div class="col-md-12">
+			        			<div id="articulosg">
+			        				<br>
+									<h4 id="titulo_p" "text-justify"> El Jarillo </h4> 
+									<br>
+									<div align="center"> <img style="height: 350px" class="img-responsive" src="images/El_jarillo.png" alt="jarillo" title="Imagen El Jarillo" id="imagen_larga"> </div>
+			          				<br>
+			          				<p id="tipotext" class="text-justify">
+
+									La actividad comercial, turística y hotelera de El Jarillo es bastante más reducida que la de la Colonia Tovar, y su economía gira principalmente en torno a la actividad agrícola. Sus pobladores se han dedicado por décadas al cultivo intenso de hortalizas, duraznos y fresas, entre otros frutos.
+
+									Es importante mencionar a la llamada "casa de tejas", donde vivieron los primeros alemanes llegados a El Jarillo y tuvieron lugar las primeras plantaciones de durazno. Al principio no se le prestaba la menor atención a esta fruta, solo se tenían algunos árboles para el consumo de los lugareños y de quienes al pasar se deleitaban con éstas. Luego se dieron cuenta que si se aplicaban ciertas técnicas de cultivo -ya que se trata de una planta de 4 estaciones- podría dar resultado si se cultivaba en masa. Así fue creciendo el cultivo del durazno hasta hacerse responsable del progreso económico de la mayoría de los pobladores de la región.</p>
+			          				<br>
+			          				<h4 id="titulo_p" "text-justify"> Ubicación: </h4> 
+			          				<p id="tipotext" class="text-justify"> El Jarillo se ubica en los altos mirandinos aproximadamente a 30 km. de la ciudad de Los Teques y a unos pocos kilómetros de la Colonia Tovar estado Aragua.  </p>
+			          				<br>
+			          				<h4 id="titulo_p" "text-justify"> Historia: </h4> 
+			          				<p id="tipotext" class="text-justify"> Este pueblo, así como la Colonia Tovar, fue fundado por las mismas personas, de origen alemán. Es por esto que pasaras de una ciudad donde se puede apreciar arquitectura colonial venezolana, como es el caso de Los Teques y a impresionarte con la arquitectura típica alemana que te dará la sensación de estar en este país europeo. </p>
+			          				<br>
+			          				<h4 id="titulo_p" "text-justify"> Turismo: </h4> 
+			          				<p id="tipotext" class="text-justify"> Lo que no puedes dejar de hacer al visitar EL Jarillo es: comprar en la panadería del pueblo, degustar una rica salchicha alemana, visitar la fábrica de salsas caseras, degustar dulces criollo, lanzarte en parapente y realizar el recorrido agro-turístico.
+
+									Y para quienes gustan del ejercicio al aire libre, se es recomendable ir en bicicleta, o caminando, hasta el embalse de Agua Fría, cruzando una parte del Parque Nacional Macarao. La entrada al parque se encuentra poco antes de llegar a El Jarillo, al frente del comando de la Guardia Nacional, en donde también hay un puesto de Inparques en donde deberán registrarse. Saliendo de El Jarillo en dirección a La Colonia Tovar, hay un camino a la derecha, de tierra y en malas condiciones (ocho kilómetros aprox.) que lleva directo hasta el embalse; es necesario usar vehículos de doble tracción y, por seguridad, es recomendable ir en grupo. </p>
+			          				<br>
+			          				<h4 id="titulo_p" "text-justify"> Compartir este artículo en: </h4> 
+									<a href="https://www.facebook.com/Monte-y-Culebra-VS-Civilizaci%C3%B3n-1746191228943967/" target="_blank"> <img  alt="Facebook" src="images/facebook_3.png" title="Facebook" img border="0" /></a>
+
+									<a href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Twitter" src="images/twitter_3.png" title="Twitter" img border="0" /></a>
+
+									<a href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Instagram" src="images/instagram_5.png" title="Instagram" img border="0" /></a>
+									<br>
+									<br>
+									<hr> </hr>
+									<h4 id="titulo_p" "text-justify"> Comentarios: </h4> 
+									<div id="comentarios">
+										<div id="encabezado">
+											<a href="#" id="forgot-p"> Nombre de usuario: </a>
+											<p id="enviado">Enviado: 9-03-2015 </p>
+										</div>
+										<div id="comenta">
+											<p id="tipotext" class="text-justify"> Lo mejor de mi vida! </p>
+										</div>
+										<div id="votacion">
+											<li> 
+												<a title="Me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-up"> <strong> 0 </strong> </span></a>
+												<a title="No me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-down"> <strong> 1 </strong> </span></a>
+												<a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Responder </a>
+												<div id="spam">
+													<a href="#" id = "antibtn-s" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Denunciar como spam </a>
+												</div>
+											</li>
+										</div>
+									</div>
+
+									<div id="comentarios">
+										<div id="encabezado">
+											<a href="#" id="forgot-p"> Nombre de usuario: </a>
+											<p id="enviado">Enviado: 11-03-2015 </p>
+										</div>
+										<div id="comenta">
+											<p id="tipotext" class="text-justify"> Excelente lugar para viajar! </p>
+										</div>
+										<div id="votacion">
+											<li> 
+												<a title="Me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-up"> <strong> 12 </strong> </span></a>
+												<a title="No me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-down"> <strong> 2 </strong> </span></a>
+												<a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Responder </a>
+												<div id="spam">
+													<a href="#" id = "antibtn-s" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Denunciar como spam </a>
+												</div>
+											</li>
+										</div>
+									</div>
+
+									<div id="comentarios">
+										<div id="encabezado">
+											<a href="#" id="forgot-p"> Nombre de usuario: </a>
+											<p id="enviado">Enviado: 12-03-2015 </p>
+										</div>
+										<div id="comenta">
+											<p id="tipotext" class="text-justify"> El mejor destino turístico de Caracas :) </p>
+										</div>
+										<div id="votacion">
+											<li> 
+												<a title="Me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-up"> <strong> 7 </strong> </span></a>
+												<a title="No me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-down"> <strong> 1 </strong> </span></a>
+												<a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Responder </a>
+												<div id="spam">
+													<a href="#" id = "antibtn-s" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Denunciar como spam </a>
+												</div>
+											</li>
+										</div>
+									</div>
+
+									<div id="comentarios">
+										<div id="encabezado">
+											<a href="#" id="forgot-p"> Nombre de usuario: </a>
+											<p id="enviado">Enviado: 12-03-2015 </p>
+										</div>
+										<div id="comenta">
+											<p id="tipotext" class="text-justify"> El mejor destino turístico de Caracas :) 
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)
+											El mejor destino turístico de Caracas :)</p>
+										</div>
+										<div id="votacion">
+											<li> 
+												<a title="Me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-up"> <strong> 3 </strong> </span></a>
+												<a title="No me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-down"> <strong> 2 </strong> </span></a>
+												<a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Responder </a>
+												<div id="spam">
+													<a href="#" id = "antibtn-s" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Denunciar como spam </a>
+												</div>
+											</li>
+										</div>
+									</div>
+
+									<div id="comentarios">
+										<div id="encabezado">
+											<a href="#" id="forgot-p"> Nombre de usuario: </a>
+											<p id="enviado">Enviado: 19-03-2015 </p>
+										</div>
+										<div id="comenta">
+											<p id="tipotext" class="text-justify"> El mejor destino turístico de Caracas :) </p>
+										</div>
+										<div id="votacion">
+											<li> 
+												<a title="Me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-up"> <strong> 7 </strong> </span></a>
+												<a title="No me gusta" href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> <span class="glyphicon glyphicon-thumbs-down"> <strong> 1 </strong> </span></a>
+												<a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Responder </a>
+												<div id="spam">
+													<a href="#" id = "antibtn-s" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Denunciar como spam </a>
+												</div>
+											</li>
+										</div>
+									</div>
+
+									
+									<br>
+									<hr> </hr>
+
+
+									<div id="comentarios">
+										
+										<textarea class="form-control" placeholder="Escribe aquí tu comentario..." rows="2"></textarea>
+										<div id="votacion">
+											<li> 
+												<a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#mySpam"> Comentar </a>
+											</li>
+										</div>
+									</div>
+
+								</div>
+								
+			        		</div>
+
+			        	</div>
+
+			        </div>
+			    	</div>
+
+			        <div id="derecho">
+	        		<div class="col-md-3">
+	        			<div id="noticias">
+	        				<h4 id="titulo_p" class="text-center"> NOTICIAS  </h4>
+		        			<div id="contactar3">
+		        				
+								<h4 id="titulo_p" class="text-center"> Síguenos en:  </h4>
+								
+								<center>
+									<a class="button btn-sm" href="https://www.facebook.com/Monte-y-Culebra-VS-Civilizaci%C3%B3n-1746191228943967/" target="_blank"> <img  alt="Facebook" src="images/facebook_3.png" title="Facebook" img border="0" /></a>
+
+									<a class="button btn-sm" href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Twitter" src="images/twitter_3.png" title="Twitter" img border="0" /></a>
+
+									<a class="button btn-sm" href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Instagram" src="images/instagram_5.png" title="Instagram" img border="0" /></a>
+								</center>
+							</div>
+
+							<div id="contactar">
+								<h4 id="titulo_p" class="text-center"> ¡Contáctanos!  </h4>
+		          				<p id="tipotext" class="text-justify">Si deseas obtener información acerca de nuestras actividades, lo que hacemos, o posees alguna duda referente a nuestros posts, te invito a llenar el formulario de contacto.</p>
+		          				<center> <li> <a href="#" id = "btn-li" class="button btn-sm" data-toggle="modal" data-target="#myModal2"> Contactar </a></li> </center>
+							</div>
+
+							<!-- Modal -->
+							<div id="myModal2" class="modal fade" role="dialog">
+	  							<div class="modal-dialog">
+
+	    							<!-- Modal content-->
+	    							<div class="modal-content">
+	      								<div class="modal-header">
+	        								
+	        								<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Contacto!</h4>
+	      								</div>
+
+	      								<div class="modal-body">
+	      									<br><br>
+	        								<p class="text-justify" id="tipotext"> <b> Por favor introduzca su email, seguido de la consulta que desea realizar: </b></p>
+	        								<br>
+	        								<div class="contenedor-inputs">
+	        									<div>
+		        									<label class="text-justify" id="tipotext"> <b> Email:</b> </label>
+		        									<br>
+		        									<input  type="text" class="campo-texto-i" placeholder="correo@example.com">
+												</div>
+												<br>
+												<div>
+		        									<label  class="text-justify" id="tipotext"> <b> Consulta: </b> </label>
+		        									<br>
+		        									<textarea  type="text"  rows="5" placeholder="Mensaje..." > </textarea>
+		      									</div>
+		      									<br>
+		        								<p class="text-justify"><a href="#" type="submit" id = "btn-s" class="button btn-sm"><b>Enviar</b></a></p>
+		        								<br>
+		        								<p class="text-justify" id="tipotext"><a target="_blank" href="https://accounts.google.com/SignUp?service=mail&hl=es&continue=http%3A%2F%2Fmail.google.com%2Fmail%2F%3Fpc%3Des-ha-latam-ve-bk-xplatform1&utm_campaign=es&utm_source=es-ha-latam-ve-bk-xplatform1&utm_medium=ha" id="forgot-p">¿No posees correo electrónico?</a></p>  
+		        
+		    								</div>
+	      								</div>
+
+			      						<div class="modal-footer">
+			        						<button type="button" id="antibtn-s" class="button btn-sm" data-dismiss="modal">Cerrar</button>
+			      						</div>
+	    							</div>
+
+	  							</div>
+							</div>
+
+							<div id="contactar2">
+								<h4 id="titulo_p" class="text-center"> ¡Suscríbete gratis!  </h4> 
+		          				<p id="tipotext" class="text-justify">Si deseas obtener información referente a nuestras últimas noticias, próximas actividades, boletines especiales y más, puedes suscribirte de manera gratuita:</p>
+		          				<center> <li> <a href="#" id = "btn-li" class="button btn-sm" data-toggle="modal" data-target="#myModal"> Suscribirse </a></li> </center>
+							</div>
+
+							<div id="contactar4">
+								<h4 id="titulo_p" class="text-center"> ¡Regístrate gratis!  </h4> 
+		          				<p id="tipotext" class="text-justify">Si deseas realizar acciones adicionales, como realizar comentarios, publicar una foto en la galería de tu preferencia, puedes registrarte de manera gratuita:</p>
+		          				<center> <li> <a href="#" id = "btn-li" class="button btn-sm" data-toggle="modal" data-target="#myModal4"> Registrarse </a></li> </center>
+							</div>
+
+							<div id="actividad">
+								<h4 id="titulo_p" class="text-center"> ¡Próximas actividades!  </h4> 
+		          				<p id="tipotext" class="text-justify">Despliegue la barra y obtenga información de todas nuestras actividades y los artículos publicados de acuerdo al mes de su preferencia.</p>
+		          				<br>
+		          				<label id="tipotext"> <b> Escoja el mes:  </b></label>
+		          				<select id="region">
+		          					<!--<option value=" "> Mes </option>-->
+					                <option value="a_enero.html">Enero</option>
+					                <option value="a_febrero.html">Febrero</option>
+					                <option value="a_marzo.html">Marzo</option>
+					                <option value="a_abril.html">Abril</option>
+					                <option value="a_mayo.html">Mayo</option>
+					                <option value="a_junio.html">Junio</option>
+					                <option value="a_julio.html">Julio</option>
+					                <option value="a_agosto.html">Agosto</option>
+					                <option value="a_septiembre.html">Septiembre</option>
+					                <option value="a_octubre.html">Octubre</option>
+					                <option value="a_noviembre.html">Noviembre</option>
+					                <option value="a_diciembre.html">Diciembre</option>
+					            </select>
+
+					            <script type="text/javascript">
+	    							document.getElementById("region").onchange = function() {
+								        if (this.selectedIndex>=0) {
+								            window.location.href = this.value;
+								        }        
+							    	};
+								</script>
+
+							</div>
+						</div>
+
+	        		</div>
+	        		</div>
+
+	      		</div>
+
+
+			</div>
+
+	    <!-- Implementacion de los .js-->
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<script src="js/bootstrap.js"></script>
+
+		<script src="js/functions.js"></script>
+
+    	<script type="text/javascript">
+
+		function valida() {
+  		var ok = true;
+  		var msg = "Debes escribir algo en los campos:\n";
+
+  		if(document.form.getElementById("correo").value == "")
+  		{
+    		msg += " Email\n";
+    		ok = false;
+  		}
+
+		if(document.form.getElementById('contraseña').value == "")
+		{
+		    msg += "Contraseña\n";
+		    ok = false;
+		}
+
+		if(ok == false)
+			alert(msg);
+		return ok;
+
+		}
+
+
+		</script>
+
+		<script>
+     		$(document).ready(function(){
+        		$('.dropdown-toggle').dropdown()
+    		});
+		</script>
+
+		</body>
+</html>

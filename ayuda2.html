@@ -1,0 +1,909 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title> Monte y Culebra VS Civilización- La cumbre de tus mejores destinos </title>
+
+		<!--[DEFINICIÓN DEL CSS]-->
+			<link rel="stylesheet" href="css/bootstrap.css" />
+			<link rel="stylesheet" href="css/bootstrap.min.css" />
+	    	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    	<!--[/DEFINICIÓN DEL CSS]-->
+
+
+		<!-- Implemento el icono de Monte y Culebra para el título-->
+		<link rel="shortcut icon" type="images/png" href="favicon.ico" />
+
+	</head>
+
+		<body >
+			
+			<div class="container">
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				  	<div class="container-fluid">
+				    	<div class="navbar-header">
+				    		<img class="icono" src="images/Icono_t.png">
+				      		<a class="navbar-brand" href="prueba.html"> <p id="titulo_p"> Monte y Culebra VS Civilización </p></a>
+				    	</div>
+					    
+					    <ul class="nav navbar-nav navbar-right">
+      						<li><a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#myModal3"> <span class="glyphicon glyphicon-user"> </span>&nbsp;Iniciar Sesión </a></li>
+    					</ul>
+
+
+				    </div>
+				</nav>
+				
+
+
+				<!-- Modal -->
+				<div id="myModal3" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h3 class="text-center" id="titulo">¡Bienvenido!</h3>
+      						</div>
+
+      						<div class="modal-body">
+      							<form class="contenedor-inputs" method="get" onsubmit="return valida()">
+      								<br>
+        							<p class="text-center form-signin-heading" id="tipotext"> <b> Por favor, complete los siguientes campos: </b></p>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  id="correo" type="email" class="campo-texto-i" placeholder="correo@example.com" title="Introduzca su correo electrónico" required>
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        								<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        					<center>
+			          						<input  id="contraseña" type="password" class="campo-texto-i" placeholder="Contraseña" maxlength= "8" title="Introduzca una contraseña de 8 dígitos" required>
+										</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        								<div class="checkbox">
+	        									<label id="forgot-p">
+            										<input type="checkbox" value="remember-me">Recordar contraseña
+          										</label>
+          									</div>
+          								</center>
+          								<br>
+	        							<p class="text-center"><a href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Iniciar Sesión</b></a></p>
+	        							<br>
+	        							<p class="text-center" id="tipotext"><b><a href="#" id="forgot-p">¿Has olvidado tu contraseña?</a></b></p> 
+	        							<p class="text-center" id="tipotext"><b>¿No posees cuenta? <a href="#" id="forgot-p"data-toggle="modal" data-target="#myModal4" role="button"> Regístrese gratis.</a></b></p> 
+	    						</form>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				
+				<div class="container-fluid">
+
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+								
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+						    <li data-target="#myCarousel" data-slide-to="4"></li>
+						    <li data-target="#myCarousel" data-slide-to="5"></li>
+						    <li data-target="#myCarousel" data-slide-to="6"></li>
+						</ol>
+
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">						    
+								<img src="images/fondo.jpg" alt="Chania" id="fondo">
+								    
+								      	
+							</div>
+
+							<div class="item">						   
+								<img src="images/fondo2.jpg" id="fondo" alt="Chania2">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo3.jpg" id="fondo" alt="Flower3">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+								      	
+							</div>
+
+							<div class="item">
+								<img src="images/fondo4.jpg" id="fondo" alt="Flower4">
+							</div>
+
+						</div>
+
+							  
+					</div>
+				</div>
+				
+				
+
+				<div class="row">
+					<nav id="barra" class="navbar navbar-default nav-pills" role="navigation">
+					  <div class="container-fluid">
+					  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>                        
+				       </button>
+				       <div class="collapse navbar-collapse text-center" id="myNavbar" >
+					    <ul id="desplegable" class="nav navbar-nav">
+					      	<li> <a title="Inicio" href="prueba.html" id = "btn-s" class="button"> <span class="glyphicon glyphicon-home"> </span></a></li>
+							<li> <a href="quienes_somos.html" id = "btn-s" class="button"> ¿Quiénes somos? </a></li>
+							<li class="active"> <a href="galeria.html" id = "btn-s" class="button"> Galería </a></li>
+							<li> <a href="#" id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal2"> Contacto </a></li>
+							<li>
+								<div class="dropdown">
+									<button class="btn btn-sm dropdown-toggle" id = "btn-s" type="button" data-toggle="dropdown">Registro
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+									    <li> <a href="#"  id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal"> Suscribirse </a></li>
+										<li> <a href="#" id = "btn-s" class="btn btn-sm" data-toggle="modal" data-target="#myModal4"> Registrarse </a></li>
+									</ul>
+								</div>
+							</li>
+							
+							<li> <a href="ayuda.html" id = "btn-s" class="button"> Accesibilidad </a></li>
+					    </ul>
+
+					    
+					    <form class="navbar-form navbar-right" role="search">
+		    				<div class="input-group">
+		        				<input type="text" class="campo-texto-i" placeholder="Escribe tu consulta...">
+		    				
+		    				 <div class="input-group-btn">
+		    				<button type="submit" class="btn btn-default btn-sm" id="btn-li2" title="Buscar"><span class="glyphicon glyphicon-search"></span></button>
+		    				</div>
+		    				</div>
+						</form>
+						
+						</div>
+					  </div>
+					</nav>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Suscripción!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Suscríbete y recibirás de manera gratuita correos electrónicos referentes a nuestros próximos eventos o actividades, además de boletines especiales y promociones. </b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Por favor, ingrese su email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="email" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Suscribirse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+				<!-- Modal -->
+				<div id="myModal4" class="modal fade" role="dialog">
+  					<div class="modal-dialog">
+
+    					<!-- Modal content-->
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<h4 class="text-center" id="titulo">¡Bienvenido!</h4>
+      						</div>
+
+      						<div class="modal-body">
+      							<br>
+        						<p class="text-center" id="tipotext"> <b> Regístrate de manera gratuita y obtendrás una cuenta, mediante la cual tendrás accesos a muchas funciones de la página web. </b></p>
+
+        						<div class="contenedor-inputs">
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Nombre:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="text" class="campo-texto-i" placeholder="Nombre Apellido">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Email:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="email" class="campo-texto-i" placeholder="correo@example.com">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        							<center>
+	        							<label class="text-center" id="tipotext"><h4><b> Confirme su contraseña:</b></h4>
+	        							</center>
+			        						<center>
+			          							<input  type="password" class="campo-texto-i" placeholder="Contraseña">
+											</center>
+	        							</label>
+	        							<br>
+	        								<p class="text-center"><a href="#" type="submit" id = "btn-li" class="btn btn-lg"><b>Registrarse</b></a></p>
+	    						</div>
+      						</div>
+
+      						<div class="modal-footer">
+        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      						</div>
+    					</div>
+
+  					</div>
+				</div>
+
+								<div class="row">
+					<div id="izquierdo">
+			        <div class="col-md-9">
+			        	<div id="articulos">   
+			        		<h4 class="text-justify" id="titulo_p">ACCESIBILIDAD</h4>
+			        		<div class="col-md-12">
+			        			<div id="articulosi2">
+			        				<br>
+									<h4 id="titulo_p" "text-justify"> Acerca de la accesibilidad: </h4>
+									<hr></hr>
+									<h4 id="titulo_p" "text-justify"> Teclas de atajo: </h4>
+									<p id="tipotext" class="text-justify">Tenemos un conjunto amplio de teclas de navegación:</p>
+			          				<p id="tipotext" class="text-justify"><strong>Tecla tabulación:</strong> si deseas navegar por la página sin necesidad de usar el mouse.</p>
+			          				<p id="tipotext" class="text-justify"><strong>Tecla enter:</strong> si deseas seleccionar una opción (por ejemplo, seleccionar un botón).</p>
+			          				<p id="tipotext" class="text-justify"><strong>Entre las teclas de atajo, tenemos:</strong></p>
+			          				<label id="tipotext"> <b> De acuerdo al explorador de su preferencia:  </b></label>
+		          					<select id="region" style="width:35%">
+		          					<!--<option value=" "> Mes </option>-->
+						               <option value="#" data-toggle="modal" data-target="#myIE">Internet Explorer</option>
+						                <option value="#" data-toggle="modal" data-target="#myMF">Mozilla Firefox</option>
+						                <option value="#" data-toggle="modal" data-target="#myC">Chrome</option>
+						                <option value="#" data-toggle="modal" data-target="#myS">Safari</option>
+						                <option value="#" data-toggle="modal" data-target="#myOI">Opera versión 12.1 o inferior</option>
+						                <option value="#" data-toggle="modal" data-target="#myOS">Opera versión 15 o superior</option> 
+					            	</select>
+
+					            	<!-- Modal -->
+									<div id="myIE" class="modal fade" role="dialog">
+					  					<div class="modal-dialog">
+
+					    					<!-- Modal content-->
+					    					<div class="modal-content">
+					      						<div class="modal-header">
+					        						<h4 class="text-center" id="titulo">Teclas de atajo: Internet Explorer</h4>
+					      						</div>
+
+					      						<div class="modal-body">
+					      							<br>
+					      							<div class="table-responsive">
+					        						<table class= "table table-bordered" id="tipotext" style="width:100%">
+													  <tr>
+													    <th>Acción</th>
+													    <th>Teclas en Windows</th>
+													    <th>Teclas en Linux</th>
+													    <th>Teclas en Mac</th>
+													  </tr>
+
+													  <tr>
+													    <td>Iniciar Sesión</td>
+													    <td>[Alt] + i</td>
+													    <td>N/A</td>
+													    <td></td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de contacto</td>
+													    <td>[Alt] + c</td>
+													    <td>N/A</td>
+													    <td></td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de suscripción</td>
+													    <td>[Alt] + s</td>
+													    <td>N/A</td>
+													    <td></td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de registro</td>
+													    <td> [Alt] + r</td>
+													    <td>N/A</td>
+													    <td></td>
+													  </tr>
+
+													  <tr>
+													    <td>Volver a la página principal</td>
+													    <td>[Alt] + h</td>
+													    <td>N/A</td>
+													    <td></td>
+													  </tr>
+						    						</table>
+						    					</div>
+					      						</div>
+
+					      						<div class="modal-footer">
+					        						<button style="margin-right:7px" type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					      						</div>
+					    					</div>
+
+					  					</div>
+									</div>
+
+									<!-- Modal -->
+									<div id="myMF" class="modal fade" role="dialog">
+					  					<div class="modal-dialog">
+
+					    					<!-- Modal content-->
+					    					<div class="modal-content">
+					      						<div class="modal-header">
+					        						<h4 class="text-center" id="titulo">Teclas de atajo: Mozilla Firefox</h4>
+					      						</div>
+
+					      						<div class="modal-body">
+					      							<br>
+					      							<div class="table-responsive">
+					        						<table class= "table table-bordered" id="tipotext" style="width:100%">
+													  <tr>
+													    <th>Acción</th>
+													    <th>Teclas en Windows</th>
+													    <th>Teclas en Linux</th>
+													    <th>Teclas en Mac</th>
+													  </tr>
+
+													  <tr>
+													    <td>Iniciar Sesión</td>
+													    <td>[Alt] [Shift] + i</td>
+													    <td>[Alt] [Shift] + i</td>
+													    <td>[Control] [Alt] + i</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de contacto</td>
+													    <td>[Alt] [Shift] + c</td>
+													    <td>[Alt] [Shift] + c</td>
+													    <td>[Control] [Alt] + c</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de suscripción</td>
+													    <td>[Alt] [Shift] + s</td>
+													    <td>[Alt] [Shift] + s</td>
+													    <td>[Control] [Alt] + s</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de registro</td>
+													    <td>[Alt] [Shift] + r</td>
+													    <td>[Alt] [Shift] + r</td>
+													    <td>[Control] [Alt] + r</td>
+													  </tr>
+
+													  <tr>
+													    <td>Volver a la página principal</td>
+													    <td>[Alt] [Shift] + h</td>
+													    <td>[Alt] [Shift] + h</td>
+													    <td>[Control] [Alt] + h</td>
+													  </tr>
+						    						</table>
+						    					</div>
+					      						</div>
+
+					      						<div class="modal-footer">
+					        						<button style="margin-right:7px" type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					      						</div>
+					    					</div>
+
+					  					</div>
+									</div>
+
+									<!-- Modal -->
+									<div id="myC" class="modal fade" role="dialog">
+					  					<div class="modal-dialog">
+
+					    					<!-- Modal content-->
+					    					<div class="modal-content">
+					      						<div class="modal-header">
+					        						<h4 class="text-center" id="titulo">Teclas de atajo: Chrome</h4>
+					      						</div>
+
+					      						<div class="modal-body">
+					      							<br>
+					      							<div class="table-responsive">
+					        						<table class= "table table-bordered" id="tipotext" style="width:100%">
+													  <tr>
+													    <th>Acción</th>
+													    <th>Teclas en Windows</th>
+													    <th>Teclas en Linux</th>
+													    <th>Teclas en Mac</th>
+													  </tr>
+
+													  <tr>
+													    <td>Iniciar Sesión</td>
+													    <td>[Alt] + i</td>
+													    <td>[Alt] + i</td>
+													    <td>[Control] [Alt] + i</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de contacto</td>
+													    <td>[Alt] + c</td>
+													    <td>[Alt] + c</td>
+													    <td>[Control] [Alt] + c</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de suscripción</td>
+													    <td>[Alt] + s</td>
+													    <td>[Alt] + s</td>
+													    <td>[Control] [Alt] + s</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de registro</td>
+													    <td>[Alt] + r</td>
+													    <td>[Alt] + r</td>
+													    <td>[Control] [Alt] + r</td>
+													  </tr>
+
+													  <tr>
+													    <td>Volver a la página principal</td>
+													    <td>[Alt] + h</td>
+													    <td>[Alt] + h</td>
+													    <td>[Control] [Alt] + h</td>
+													  </tr>
+						    						</table>
+						    					</div>
+					      						</div>
+
+					      						<div class="modal-footer">
+					        						<button style="margin-right:7px" type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					      						</div>
+					    					</div>
+
+					  					</div>
+									</div>
+
+									<!-- Modal -->
+									<div id="myS" class="modal fade" role="dialog">
+					  					<div class="modal-dialog">
+
+					    					<!-- Modal content-->
+					    					<div class="modal-content">
+					      						<div class="modal-header">
+					        						<h4 class="text-center" id="titulo">Teclas de atajo: Safari</h4>
+					      						</div>
+
+					      						<div class="modal-body">
+					      							<br>
+					      							<div class="table-responsive">
+					        						<table class= "table table-bordered" id="tipotext" style="width:100%">
+													  <tr>
+													    <th>Acción</th>
+													    <th>Teclas en Windows</th>
+													    <th>Teclas en Linux</th>
+													    <th>Teclas en Mac</th>
+													  </tr>
+
+													  <tr>
+													    <td>Iniciar Sesión</td>
+													    <td>[Alt] + i</td>
+													    <td>N/A</td>
+													    <td>[Control] [Alt] + i</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de contacto</td>
+													    <td>[Alt] + c</td>
+													    <td>N/A</td>
+													    <td>[Control] [Alt] + c</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de suscripción</td>
+													    <td>[Alt] + s</td>
+													    <td>N/A</td>
+													    <td>[Control] [Alt] + s</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de registro</td>
+													    <td>[Alt] + r</td>
+													    <td>N/A</td>
+													    <td>[Control] [Alt] + r</td>
+													  </tr>
+
+													  <tr>
+													    <td>Volver a la página principal</td>
+													    <td>[Alt] + h</td>
+													    <td>N/A</td>
+													    <td>[Control] [Alt] + h</td>
+													  </tr>
+						    						</table>
+						    					</div>
+					      						</div>
+
+					      						<div class="modal-footer">
+					        						<button style="margin-right:7px" type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					      						</div>
+					    					</div>
+
+					  					</div>
+									</div>
+
+									<!-- Modal -->
+									<div id="myOI" class="modal fade" role="dialog">
+					  					<div class="modal-dialog">
+
+					    					<!-- Modal content-->
+					    					<div class="modal-content">
+					      						<div class="modal-header">
+					        						<h4 class="text-center" id="titulo">Teclas de atajo: Opera versión 12.1 o inferior</h4>
+					      						</div>
+
+					      						<div class="modal-body">
+					      							<br>
+					      							<div class="table-responsive">
+					        						<table class= "table table-bordered" id="tipotext" style="width:100%">
+													  <tr>
+													    <th>Acción</th>
+													    <th>Teclas en Windows</th>
+													    <th>Teclas en Linux</th>
+													    <th>Teclas en Mac</th>
+													  </tr>
+
+													  <tr>
+													    <td>Iniciar Sesión</td>
+													    <td>[Shift] [Esc] + i</td>
+													    <td>[Shift] [Esc] + i</td>
+													    <td>[Shift] [Esc] + i</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de contacto</td>
+													    <td>[Shift] [Esc] + c</td>
+													    <td>[Shift] [Esc] + c</td>
+													    <td>[Shift] [Esc] + c</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de suscripción</td>
+													    <td>[Shift] [Esc] + s</td>
+													    <td>[Shift] [Esc] + s</td>
+													    <td>[Shift] [Esc] + s</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de registro</td>
+													    <td>[Shift] [Esc] + r</td>
+													    <td>[Shift] [Esc] + r</td>
+													    <td>[Shift] [Esc] + r</td>
+													  </tr>
+
+													  <tr>
+													    <td>Volver a la página principal</td>
+													    <td>[Shift] [Esc] + h</td>
+													    <td>[Shift] [Esc] + h</td>
+													    <td>[Shift] [Esc] + h</td>
+													  </tr>
+						    						</table>
+						    					</div>
+					      						</div>
+
+					      						<div class="modal-footer">
+					        						<button style="margin-right:7px" type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					      						</div>
+					    					</div>
+
+					  					</div>
+									</div>
+
+									<!-- Modal -->
+									<div id="myOS" class="modal fade" role="dialog">
+					  					<div class="modal-dialog">
+
+					    					<!-- Modal content-->
+					    					<div class="modal-content">
+					      						<div class="modal-header">
+					        						<h4 class="text-center" id="titulo">Teclas de atajo: Opera versión 15 o superior</h4>
+					      						</div>
+
+					      						<div class="modal-body">
+					      							<br>
+					      							<div class="table-responsive">
+					        						<table class= "table table-bordered" id="tipotext" style="width:100%">
+													  <tr>
+													    <th>Acción</th>
+													    <th>Teclas en Windows</th>
+													    <th>Teclas en Linux</th>
+													    <th>Teclas en Mac</th>
+													  </tr>
+
+													  <tr>
+													    <td>Iniciar Sesión</td>
+													    <td>[Alt] + i</td>
+													    <td>[Alt] + i</td>
+													    <td>[Alt] + i</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de contacto</td>
+													    <td>[Alt] + c</td>
+													    <td>[Alt] + c</td>
+													    <td>[Alt] + c</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de suscripción</td>
+													    <td>[Alt] + s</td>
+													    <td>[Alt] + s</td>
+													    <td>[Alt] + s</td>
+													  </tr>
+
+													  <tr>
+													    <td>Formulario de registro</td>
+													    <td>[Alt] + r</td>
+													    <td>[Alt] + r</td>
+													    <td>[Alt] + r</td>
+													  </tr>
+													  <tr>
+													    <td>Volver a la página principal</td>
+													    <td>[Alt] + h</td>
+													    <td>[Alt] + h</td>
+													    <td>[Alt] + h</td>
+													  </tr>
+						    						</table>
+						    					</div>
+					      						</div>
+
+					      						<div class="modal-footer">
+					        						<button style="margin-right:7px" type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					      						</div>
+					    					</div>
+
+					  					</div>
+									</div>
+
+			          				<br>
+			          				<hr></hr>
+			          				<h4 id="titulo_p" "text-justify"> Tamaño de letra: </h4> 
+			          				<p id="tipotext" class="text-justify"> Al seleccionar el icono ubicado en la barra superior, podrás aumentar o disminuir el tamaño de la letra.  </p>
+			          				<br>
+			          				<hr></hr>
+			          				<h4 id="titulo_p" "text-justify"> En cuanto a las imágenes: </h4> 
+			          				<p id="tipotext" class="text-justify"> Todas las imágenes poseen un título, al colocar el puntero del mouse sobre las mismas se desplegará el nombre de la imagen. </p>
+			          				<br>
+			          				<hr></hr>
+			          				<h4 id="titulo_p" "text-justify"> ¡Más información! </h4> 
+			          				<p id="tipotext" class="text-justify"> Si deseas darnos alguna sugerencia con respecto a la accesibilidad, te invito a enviar tu consulta a través del formulario de contacto:  </p>
+			          				<li> <a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#myModal2"> Formulario de Contacto </a> </li>
+								</div>
+								
+			        		</div>
+
+			        	</div>
+
+			        </div>
+			    	</div>
+
+			        <div id="derecho">
+	        		<div class="col-md-3">
+	        			<div id="noticias">
+	        				<h4 id="titulo_p" class="text-center"> NOTICIAS  </h4>
+		        			<div id="contactar3">
+		        				
+								<h4 id="titulo_p" class="text-center"> Síguenos en:  </h4>
+								
+								<center>
+									<a href="https://www.facebook.com/Monte-y-Culebra-VS-Civilizaci%C3%B3n-1746191228943967/" target="_blank"> <img  alt="Facebook" src="images/facebook_3.png" title="Facebook" img border="0" /></a>
+
+									<a href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Twitter" src="images/twitter_3.png" title="Twitter" img border="0" /></a>
+
+									<a href="https://twitter.com/MyCvsC1" target="_blank"><img  alt="Instagram" src="images/instagram_5.png" title="Instagram" img border="0" /></a>
+								</center>
+							</div>
+
+							<div id="contactar">
+								<h4 id="titulo_p" class="text-center"> ¡Contáctanos!  </h4>
+		          				<p id="tipotext" class="text-justify">Si deseas obtener información acerca de nuestras actividades, lo que hacemos, o posees alguna duda referente a nuestros posts, te invito a llenar el formulario de contacto.</p>
+		          				<center> <li><a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#myModal2"> Formulario de contacto </a></li> </center>
+							</div>
+
+							<!-- Modal -->
+							<div id="myModal2" class="modal fade" role="dialog">
+	  							<div class="modal-dialog">
+
+	    							<!-- Modal content-->
+	    							<div class="modal-content">
+	      								<div class="modal-header">
+	        								
+	        								<h4 class="text-center" id="titulo">¡Bienvenido al Formulario de Contacto!</h4>
+	      								</div>
+
+	      								<div class="modal-body">
+	      									<br><br>
+	        								<p class="text-justify" id="tipotext"> <b> Por favor introduzca su email, seguido de la consulta que desea realizar: </b></p>
+	        								<br>
+	        								<div class="contenedor-inputs">
+	        									<div>
+		        									<label class="text-justify" id="tipotext"> <b> Email:</b> </label>
+		        									<br>
+		        									<input  type="text" class="campo-texto-i" placeholder="correo@example.com">
+												</div>
+												<br>
+												<div>
+		        									<label  class="text-justify" id="tipotext"> <b> Consulta: </b> </label>
+		        									<br>
+		        									<textarea  type="text"  rows="5" placeholder="Mensaje..." > </textarea>
+		      									</div>
+		      									<br>
+		        								<p class="text-justify"><a type="submit" id = "btn-s" class="btn btn-default btn-md"><b>Enviar</b></a></p>
+		        								<br>
+		        								<p class="text-justify" id="tipotext"><a target="_blank" href="https://accounts.google.com/SignUp?service=mail&hl=es&continue=http%3A%2F%2Fmail.google.com%2Fmail%2F%3Fpc%3Des-ha-latam-ve-bk-xplatform1&utm_campaign=es&utm_source=es-ha-latam-ve-bk-xplatform1&utm_medium=ha" id="forgot-p">¿No posees correo electrónico?</a></p>  
+		        
+		    								</div>
+	      								</div>
+
+			      						<div class="modal-footer">
+			        						<button type="button" id="antibtn-s" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			      						</div>
+	    							</div>
+
+	  							</div>
+							</div>
+
+							<div id="contactar2">
+								<h4 id="titulo_p" class="text-center"> ¡Suscríbete gratis!  </h4> 
+		          				<p id="tipotext" class="text-justify">Si deseas obtener información referente a nuestras últimas noticias, próximas actividades, boletines especiales y más, puedes suscribirte de manera gratuita:</p>
+		          				<center> <li> <a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#myModal"> Formulario de suscripción </a></li> </center>
+							</div>
+
+							<div id="contactar2">
+								<h4 id="titulo_p" class="text-center"> ¡Regístrate gratis!  </h4> 
+		          				<p id="tipotext" class="text-justify">Si deseas realizar acciones adicionales, como realizar comentarios, publicar una foto en la galería de tu preferencia, puedes registrarte de manera gratuita:</p>
+		          				<center> <li><a href="#" id = "btn-li" class="btn btn-sm" data-toggle="modal" data-target="#myModal4"> Registrarse </a></li> </center>
+							</div>
+
+							<div id="actividad">
+								<h4 id="titulo_p" class="text-center"> ¡Próximas actividades!  </h4> 
+		          				<p id="tipotext" class="text-justify">Despliegue la barra y obtenga información de todas nuestras actividades y los artículos publicados de acuerdo al mes de su preferencia.</p>
+		          				<br>
+		          				<label id="tipotext"> <b> Escoja el mes:  </b></label>
+		          				<select id="region">
+		          					<!--<option value=" "> Mes </option>-->
+					                <option value="a_enero.html">Enero</option>
+					                <option value="a_febrero.html">Febrero</option>
+					                <option value="a_marzo.html">Marzo</option>
+					                <option value="a_abril.html">Abril</option>
+					                <option value="a_mayo.html">Mayo</option>
+					                <option value="a_junio.html">Junio</option>
+					                <option value="a_julio.html">Julio</option>
+					                <option value="a_agosto.html">Agosto</option>
+					                <option value="a_septiembre.html">Septiembre</option>
+					                <option value="a_octubre.html">Octubre</option>
+					                <option value="a_noviembre.html">Noviembre</option>
+					                <option value="a_diciembre.html">Diciembre</option>
+					            </select>
+
+					            <script type="text/javascript">
+	    							document.getElementById("region").onchange = function() {
+								        if (this.selectedIndex>=0) {
+								            window.location.href = this.value;
+								        }        
+							    	};
+								</script>
+
+							</div>
+						</div>
+
+	        		</div>
+	        		</div>
+
+	      		</div>
+
+
+			</div>
+
+	    <!-- Implementacion de los .js-->
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+
+		<script src="js/bootstrap.js"></script>
+
+		<script src="js/functions.js"></script>
+
+    	<script type="text/javascript">
+
+		function valida() {
+  		var ok = true;
+  		var msg = "Debes escribir algo en los campos:\n";
+
+  		if(document.form.getElementById("correo").value == "")
+  		{
+    		msg += " Email\n";
+    		ok = false;
+  		}
+
+		if(document.form.getElementById('contraseña').value == "")
+		{
+		    msg += "Contraseña\n";
+		    ok = false;
+		}
+
+		if(ok == false)
+			alert(msg);
+		return ok;
+
+		}
+
+
+		</script>
+
+		<script>
+     		$(document).ready(function(){
+        		$('.dropdown-toggle').dropdown()
+    		});
+		</script>
+
+		</body>
+</html>
